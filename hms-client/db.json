@@ -1,0 +1,319 @@
+{
+  "tenants": [
+    {
+      "tenantId": "tenant_apollo",
+      "name": "Apollo Hospital",
+      "domain": "apollo.in",
+      "address": "Greams Road, Chennai, Tamil Nadu",
+      "contact": "+91-44-28292000",
+      "adminEmail": "admin@apollo.in",
+      "licenseNumber": "AP12345",
+      "status": "ACTIVE",
+      "password" : "admin123"
+    },
+    {
+      "tenantId": "tenant_fortis",
+      "name": "Fortis Hospital",
+      "domain": "fortis.in",
+      "address": "Sector 62, Noida, Uttar Pradesh",
+      "contact": "+91-120-4949494",
+      "adminEmail": "admin@fortis.in",
+      "licenseNumber": "FT67890",
+      "status": "ACTIVE",
+      "password" : "admin123"
+    },
+    {
+      "tenantId": "tenant_max",
+      "name": "Max Hospital",
+      "domain": "maxhealthcare.in",
+      "address": "Shalimar Bagh, Delhi",
+      "contact": "+91-11-49059000",
+      "adminEmail": "admin@maxhealthcare.in",
+      "licenseNumber": "MX11223",
+      "status": "ACTIVE",
+      "password" : "admin123"
+    }
+  ],
+  "users": [
+    {
+      "id": "doc_apollo_1",
+      "tenantId": "tenant_apollo",
+      "firstName": "Amit",
+      "lastName": "Sharma",
+      "email": "amit.sharma@apollo.in",
+      "roles": ["doctor"],
+      "department": "Cardiology",
+      "password": "doctor123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "doc_apollo_2",
+      "tenantId": "tenant_apollo",
+      "firstName": "Priya",
+      "lastName": "Rao",
+      "email": "priya.rao@apollo.in",
+      "roles": ["doctor"],
+      "department": "Neurology",
+      "password": "doctor123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "rec_apollo_1",
+      "tenantId": "tenant_apollo",
+      "firstName": "Rakesh",
+      "lastName": "Verma",
+      "email": "rakesh.verma@apollo.in",
+      "roles": ["receptionist"],
+      "password": "reception123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pharma_apollo_1",
+      "tenantId": "tenant_apollo",
+      "firstName": "Neha",
+      "lastName": "Singh",
+      "email": "neha.singh@apollo.in",
+      "roles": ["pharmacist"],
+      "password": "pharma123",
+      "status": "ACTIVE"
+    },
+
+    {
+      "id": "doc_fortis_1",
+      "tenantId": "tenant_fortis",
+      "firstName": "Rohan",
+      "lastName": "Kumar",
+      "email": "rohan.kumar@fortis.in",
+      "roles": ["doctor"],
+      "department": "Orthopedics",
+      "password": "doctor123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "doc_fortis_2",
+      "tenantId": "tenant_fortis",
+      "firstName": "Anjali",
+      "lastName": "Mehta",
+      "email": "anjali.mehta@fortis.in",
+      "roles": ["doctor"],
+      "department": "Gynecology",
+      "password": "doctor123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "rec_fortis_1",
+      "tenantId": "tenant_fortis",
+      "firstName": "Sandeep",
+      "lastName": "Jain",
+      "email": "sandeep.jain@fortis.in",
+      "roles": ["receptionist"],
+      "password": "reception123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pharma_fortis_1",
+      "tenantId": "tenant_fortis",
+      "firstName": "Divya",
+      "lastName": "Patel",
+      "email": "divya.patel@fortis.in",
+      "roles": ["pharmacist"],
+      "password": "pharma123",
+      "status": "ACTIVE"
+    },
+
+    {
+      "id": "doc_max_1",
+      "tenantId": "tenant_max",
+      "firstName": "Vikram",
+      "lastName": "Gupta",
+      "email": "vikram.gupta@maxhealthcare.in",
+      "roles": ["doctor"],
+      "department": "Dermatology",
+      "password": "doctor123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "doc_max_2",
+      "tenantId": "tenant_max",
+      "firstName": "Sneha",
+      "lastName": "Joshi",
+      "email": "sneha.joshi@maxhealthcare.in",
+      "roles": ["doctor"],
+      "department": "Pediatrics",
+      "password": "doctor123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "rec_max_1",
+      "tenantId": "tenant_max",
+      "firstName": "Manish",
+      "lastName": "Shukla",
+      "email": "manish.shukla@maxhealthcare.in",
+      "roles": ["receptionist"],
+      "password": "reception123",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "pharma_max_1",
+      "tenantId": "tenant_max",
+      "firstName": "Kiran",
+      "lastName": "Reddy",
+      "email": "kiran.reddy@maxhealthcare.in",
+      "roles": ["pharmacist"],
+      "password": "pharma123",
+      "status": "ACTIVE"
+    }
+  ],
+  "patients": [
+    {
+      "patientId": "tenant_apollo-P-001",
+      "tenantId": "tenant_apollo",
+      "name": "Arjun Patel",
+      "dob": "1990-05-15",
+      "gender": "Male",
+      "bloodGroup": "B+",
+      "contact": "+91-9876543210",
+      "address": "Chennai, Tamil Nadu",
+      "doctorAssigned": "doc_apollo_1",
+      "patientType": "OPD"
+    },
+    {
+      "patientId": "tenant_apollo-P-002",
+      "tenantId": "tenant_apollo",
+      "name": "Meera Singh",
+      "dob": "1985-08-20",
+      "gender": "Female",
+      "bloodGroup": "A+",
+      "contact": "+91-9876543211",
+      "address": "Chennai, Tamil Nadu",
+      "doctorAssigned": "doc_apollo_2",
+      "patientType": "IPD"
+    },
+
+    {
+      "patientId": "tenant_fortis-P-001",
+      "tenantId": "tenant_fortis",
+      "name": "Raghav Kumar",
+      "dob": "1992-03-10",
+      "gender": "Male",
+      "bloodGroup": "O+",
+      "contact": "+91-9876543220",
+      "address": "Noida, Uttar Pradesh",
+      "doctorAssigned": "doc_fortis_1",
+      "patientType": "OPD"
+    },
+    {
+      "patientId": "tenant_fortis-P-002",
+      "tenantId": "tenant_fortis",
+      "name": "Nisha Mehta",
+      "dob": "1988-11-25",
+      "gender": "Female",
+      "bloodGroup": "AB+",
+      "contact": "+91-9876543221",
+      "address": "Noida, Uttar Pradesh",
+      "doctorAssigned": "doc_fortis_2",
+      "patientType": "IPD"
+    },
+
+    {
+      "patientId": "tenant_max-P-001",
+      "tenantId": "tenant_max",
+      "name": "Aditya Sharma",
+      "dob": "1995-07-12",
+      "gender": "Male",
+      "bloodGroup": "A-",
+      "contact": "+91-9876543230",
+      "address": "Delhi",
+      "doctorAssigned": "doc_max_1",
+      "patientType": "OPD"
+    },
+    {
+      "patientId": "tenant_max-P-002",
+      "tenantId": "tenant_max",
+      "name": "Pooja Reddy",
+      "dob": "1991-02-18",
+      "gender": "Female",
+      "bloodGroup": "B-",
+      "contact": "+91-9876543231",
+      "address": "Delhi",
+      "doctorAssigned": "doc_max_2",
+      "patientType": "IPD"
+    }
+  ],
+  "prescriptions": [
+    {
+      "prescriptionId": "RX-APL-001",
+      "tenantId": "tenant_apollo",
+      "patientId": "tenant_apollo-P-001",
+      "doctor": "doc_apollo_1",
+      "medicines": [
+        { "name": "Paracetamol", "dosage": "500mg", "frequency": "Twice a day", "duration": "5 days" },
+        { "name": "Amoxicillin", "dosage": "250mg", "frequency": "Three times a day", "duration": "7 days" }
+      ],
+      "notes": "Take medicines after food",
+      "status": "ISSUED"
+    },
+    {
+      "prescriptionId": "RX-APL-002",
+      "tenantId": "tenant_apollo",
+      "patientId": "tenant_apollo-P-002",
+      "doctor": "doc_apollo_2",
+      "medicines": [
+        { "name": "Ibuprofen", "dosage": "400mg", "frequency": "Twice a day", "duration": "5 days" },
+        { "name": "Cetrizine", "dosage": "10mg", "frequency": "Once a day", "duration": "10 days" }
+      ],
+      "notes": "Take with water",
+      "status": "ISSUED"
+    },
+
+    {
+      "prescriptionId": "RX-FRT-001",
+      "tenantId": "tenant_fortis",
+      "patientId": "tenant_fortis-P-001",
+      "doctor": "doc_fortis_1",
+      "medicines": [
+        { "name": "Metformin", "dosage": "500mg", "frequency": "Twice a day", "duration": "30 days" },
+        { "name": "Vitamin D", "dosage": "1000 IU", "frequency": "Once a day", "duration": "30 days" }
+      ],
+      "notes": "Take after meals",
+      "status": "ISSUED"
+    },
+    {
+      "prescriptionId": "RX-FRT-002",
+      "tenantId": "tenant_fortis",
+      "patientId": "tenant_fortis-P-002",
+      "doctor": "doc_fortis_2",
+      "medicines": [
+        { "name": "Pantoprazole", "dosage": "40mg", "frequency": "Once a day", "duration": "14 days" },
+        { "name": "Paracetamol", "dosage": "500mg", "frequency": "Twice a day", "duration": "5 days" }
+      ],
+      "notes": "Avoid spicy food",
+      "status": "ISSUED"
+    },
+
+    {
+      "prescriptionId": "RX-MAX-001",
+      "tenantId": "tenant_max",
+      "patientId": "tenant_max-P-001",
+      "doctor": "doc_max_1",
+      "medicines": [
+        { "name": "Levocetirizine", "dosage": "5mg", "frequency": "Once a day", "duration": "7 days" },
+        { "name": "Azithromycin", "dosage": "500mg", "frequency": "Once a day", "duration": "5 days" }
+      ],
+      "notes": "Drink plenty of water",
+      "status": "ISSUED"
+    },
+    {
+      "prescriptionId": "RX-MAX-002",
+      "tenantId": "tenant_max",
+      "patientId": "tenant_max-P-002",
+      "doctor": "doc_max_2",
+      "medicines": [
+        { "name": "Ranitidine", "dosage": "150mg", "frequency": "Twice a day", "duration": "14 days" },
+        { "name": "Cetirizine", "dosage": "10mg", "frequency": "Once a day", "duration": "7 days" }
+      ],
+      "notes": "Avoid oily food",
+      "status": "ISSUED"
+    }
+  ]
+}

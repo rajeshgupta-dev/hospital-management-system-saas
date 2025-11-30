@@ -1,0 +1,22 @@
+import { useDispatch } from "react-redux";
+import { logout } from "../store/slices/authSlice";
+import { useNavigate } from "react-router-dom";
+
+export default function LogoutButton() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    dispatch(logout());
+    navigate("/user-login");
+  };
+
+  return (
+    <button
+      onClick={handleLogout}
+      className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+    >
+      Logout
+    </button>
+  );
+}
